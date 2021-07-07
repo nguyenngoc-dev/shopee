@@ -1,0 +1,189 @@
+.header{
+    height:120px;
+    background-image: linear-gradient(180deg,#f7462e,#fe6233);
+}
+.nav-list{
+    list-style: none;
+    display: inline-block;
+    padding:0;
+    margin-top:5px;
+}
+.nav-item{
+    display: inline-block;
+    padding:0 5px;
+    position: relative;
+    
+
+}
+
+.nav-item .icon-contact:hover{
+    color:rgba(255,255,255,0.5);
+
+} 
+.border-right{
+    border-right:1px solid hsla(0,0%,100%,.22);
+    
+}
+.icon-contact{
+    text-decoration: none;
+    color:var(--white-color);
+    font-size: 1.3rem;
+    padding: 0 5px;
+}
+.font-color{
+    font-size: 1.3rem;
+    color:white  !important
+}
+.header-navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* QR code */
+.header__qr{
+    position:absolute;
+    width:185px;
+    left:1rem;
+    top:150%;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    padding: 8px;
+    display: none;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease; 
+}
+/* Tạo cầu nối giữa thẻ li và qr */
+.header__qr::before{
+    content: "";
+    position:absolute;
+    display: block;
+    height: 20px;
+    width:100%;
+    top:-15px;
+    left:0;
+  
+}
+.qr-code{
+    width: 100%;
+   
+}
+.header__dowload{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header__dowload--app{
+    height: 16px;
+}
+.app_gallary{
+    left: -40px;
+    top: 6px;
+    position: relative;
+    height: 15px;
+    margin-bottom: 10px;
+
+}
+
+.show-qr:hover .header__qr{
+    display:block;
+}
+.show-notification:hover .nav-item-notify{
+    display: block;
+}
+
+.nav-item-notify{
+    position: absolute;
+    width:404px;
+    background-color: var(--white-color);
+    top:120%;
+    right:10px;
+    border-radius: 2px;
+    border:1px solid rgba(0,0,0,0.09);
+    display: none;
+    animation:scale 0.3s ease,fadeIn 0.3s  ease;
+}
+@keyframes scale{
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+.nav-item-notify::before{
+    content: "";
+    position:absolute;
+    display: block;
+    height: 20px;
+    width:100%;
+    top:-15px;
+    left:0;
+  
+}
+
+.notify-header{
+    height: 40px;
+    background-color: var(--white-color);
+    font-size: 1.2rem;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #aaa;
+    font-weight: 400;
+}
+
+.notify-link{
+    text-decoration: none;
+    display:flex;
+    padding: 10px 0;
+    
+}
+
+.notify-list{
+    padding-left:0;
+    list-style: none;
+}
+
+.notify-item{
+    
+    background-color: #fff4f4;
+}
+.notify-item:visited{
+    background-color:#aaa;
+}
+.notify-item:hover{
+    background-color:#eee;
+}
+
+.notify-item-img{
+    width:70px;
+    object-fit: contain;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.notify-item-name{
+   font-size:1.4rem;
+   color:var(--black-color);
+}
+
+.notify-item-discription{
+   font-size:1.2rem;
+   color:#777;
+   font-weight: 350;
+}
+.notify-footer{
+    text-align: center;
+    
+    
+}
+
+.notify-footer-content{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 350;
+    text-decoration: none;
+    width: 100%;
+    color: var(--black-color);
+    padding:5px 0;
+}
