@@ -2,6 +2,7 @@
     --white-color:#fff;
     --black-color:black;
     --text-color:#333;
+    --primary-color:#ee4d2d;
 }
 *{
     box-sizing: inherit;
@@ -36,4 +37,59 @@ html{
     to{
         opacity: 1;
     }
+}
+/* Modal */
+.modal{
+    
+    position:fixed;
+    /* rộng full màn hình khi dùng position fixed */
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    visibility: hidden;
+    animation:scale 0.1s ease,fadeIn 0.1s  ease
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);
+    
+    
+    
+}
+.modal__content{
+    z-index: 1;
+    background-color: var(--white-color);
+    margin:auto;
+    border-radius: 4px;
+    
+}
+/* button style */
+.btn{
+    min-width: 142px;
+    height:36px;
+    border: none;
+    font-size: 15px;
+    border-radius: 2px;
+    font-weight: 350;
+    outline: none;
+    cursor: pointer;
+    padding:0;
+    background-color: #fff;
+    color:#333
+
+}
+.btn.btn__normal:hover{
+    background-color: #ccc;
+}
+.btn.btn--primary{
+    color:var(--white-color);
+    background-color: var(--primary-color);
+}
+.margin-right{
+    margin-right: 8px;
 }

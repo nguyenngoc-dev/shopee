@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <script src="./assets/js/login.js"></script>
 
 </head>
 <body>
@@ -112,9 +113,9 @@
                         <a href="#"class="icon-contact">
                             <i class="far fa-question-circle" style="font-size: 16px;"></i>
                             Hỗ trợ</a> </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="show">
                         <a href="#"class="icon-contact border-right">Đăng kí</a> </li>
-                        <li class="nav-item">
+                        <li class="nav-item " id="login">
                         <a href="#"class="icon-contact">Đăng nhập</a> </li>
                 </ul>
             </div>
@@ -126,5 +127,132 @@
 
         </footer>
     </div>
+     <div class="modal" id="showmodal"> 
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__content">
+         
+            <div class="auth-form">
+                <div class="auth-form__container">
+                <div class="auth-form-header">
+                    <h3 class="auth-form-heading">
+                        Đăng ký
+                    </h3>
+                    <span class="auth-form-switch">
+                        Đăng nhập
+                    </span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" name="" class="auth-form__input" placeholder="Nhập Email" id="">
+                            
+                        </div>
+                        <div class="auth-form__group">
+
+                            <input type="password" name="" class="auth-form__input" placeholder="Nhập lại password" id="">
+                        </div>
+                        <div class="auth-form__group">
+
+                            <input type="password" name="" class="auth-form__input" placeholder="Nhập password" id="">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form-text">
+                            Bạn có đồng ý với  Shopee về
+                            <a href="" class="auth-form__link">Điều khoản dịch vụ</a>
+                            &
+                            <a href="" class="auth-form__link">Chính sách bảo mật</a>
+
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button id="back" class="btn margin-right btn__normal">Trở lại</button>
+                        <button class="btn btn--primary">Đăng ký</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--icon btn--icon__face">
+                        <i class="fab fa-facebook-square icon__size"></i>
+                      <span class="socials__text">
+                        Kết nối với Facebook
+                      </span>
+                    </a>
+                    <a href="" class="btn btn--icon btn--icon__gg">
+                    <i class="fab fa-google icon__size"></i>
+                    <span class="socials__text">
+                          
+                        Kết nối với Google
+                    </span>
+                </a>
+                </div>
+            </div>
+           
+        </div>
+    </div> -->
+    <div class="modal" id="showlogin">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__content">
+         
+            <div class="auth-form">
+                <div class="auth-form__container">
+                <div class="auth-form-header">
+                    <h3 class="auth-form-heading">
+                        Đăng Nhập
+                    </h3>
+                    <span class="auth-form-switch">
+                        Đăng Ký
+                    </span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" name="" class="auth-form__input" placeholder="Nhập Email" id="">
+                            
+                        </div>
+                        <div class="auth-form__group">
+
+                            <input type="password" name="" class="auth-form__input" placeholder="Nhập lại password" id="">
+                        </div>
+                      
+                    </div>
+                    
+                        <div class="auth-form__help">
+                            <a href="" class="forgot-link">
+                                Quên mật khẩu
+                            </a>
+                            <a href="" class="need-link">
+                                Cần trợ giúp?
+                            </a>
+                        
+                    </div>
+                  
+                    <div class="auth-form__controls">
+                        <button id="backlogin" class="btn margin-right btn__normal">Trở lại</button>
+                        <button class="btn btn--primary">Đăng Nhập</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--icon btn--icon__face">
+                        <i class="fab fa-facebook-square icon__size"></i>
+                      <span class="socials__text">
+                        Kết nối với Facebook
+                      </span>
+                    </a>
+                    <a href="" class="btn btn--icon btn--icon__gg">
+                    <i class="fab fa-google icon__size"></i>
+                    <span class="socials__text">
+                          
+                        Kết nối với Google
+                    </span>
+                </a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    
 </body>
 </html>
