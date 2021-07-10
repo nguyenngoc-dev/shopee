@@ -464,12 +464,12 @@ transparent là màu trong suốt */
     top: 115%;
     right: -15%;
     width: 400px;
-    /* text-align:center; */
+    text-align:center;
     cursor: default;
     background-color: var(--white-color);
     box-shadow: 0 3px 3rem rgba(0,0,0,0.06);
     border-radius: 2px;
-    /* display: none; */
+    display: none;
     transform-origin: 90%  top ;
     animation:scale 0.3s ease,fadeIn 0.3s  ease;
     padding: 0 8px;
@@ -515,6 +515,7 @@ transparent là màu trong suốt */
     font-size: 1.6rem;
     color:#cabdbd;
     font-weight: 400;
+    text-align: left;
 }
 
 .header__cart-list-item{
@@ -524,50 +525,64 @@ transparent là màu trong suốt */
 
 .header__cart-item{
     display: flex;
+    margin-bottom: 16px;
 }
 
 .header__cart-item-img{
     width: 42px;
     height:42px;
+    margin-right: 8px;
 }
 
 .header__cart-infor{
-
+    text-align: left;
+    flex:1;
 }
 
 .header__cart-infor-name{
-
+    display: flex;
+   
 }
 
 .header__cart-name{
-
+    flex: 1;
+    font-size: 1.3rem;
 }
 
 .header__cart-price{
-
+    font-size: 1.2rem;
+    color: var(--primary-color);
 }
 
 .header__cart-time{
-
+    padding: 0 4px;
+    color: #ccc;
 }
 
 .header__cart-quantity{
-
+    color: #ccc;
+    font-size: 1.2rem;
 }
 
-.header__cart-msg{
 
+.header__cart-msg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
 }
 
 .header__cart-dsn{
-
+    font-size: 1.2rem;
+    color: #aba2a2;
 }
 
 .header__cart-remove{
-
+    font-size: 1.3rem;
+    color: var(--text-color);
 }
 .header__cart-btn{
-
+    float: right;  
+    margin-bottom: 10px;
 }
 
 
