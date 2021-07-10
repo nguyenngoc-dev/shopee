@@ -2,7 +2,10 @@
     --white-color:#fff;
     --black-color:black;
     --text-color:#333;
-    --primary-color:#ee4d2d;
+    --primary-color:#fe6233;
+    --header-height:120px;
+    --header-nav-height:39px;
+    --header-with-search:calc(var(--header-height) - var(--header-nav-height));
 }
 *{
     box-sizing: inherit;
@@ -16,6 +19,7 @@ html{
 }
 
 .grid{
+    height:var(--header-nav-height);
     width:1200px;
     max-width: 100%;
     margin:0 auto;
@@ -49,7 +53,8 @@ html{
     bottom:0;
     display: flex;
     visibility: hidden;
-    animation:scale 0.1s ease,fadeIn 0.1s  ease
+    animation:scale 0.1s ease,fadeIn 0.1s  ease;
+    
 }
 
 .modal__overlay{

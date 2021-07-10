@@ -1,3 +1,6 @@
+
+$(document).ready(function(){
+
 var a=document.getElementById("show");
 a.onclick=function(){
     document.getElementById("showmodal").style.visibility="visible";
@@ -17,3 +20,8 @@ var backlogin=document.getElementById("backlogin")
 backlogin.onclick=function(){
     document.getElementById("showlogin").style.visibility="hidden";
 }
+});
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
