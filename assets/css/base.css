@@ -17,9 +17,10 @@ html{
     line-height: 1.6rem;
     box-sizing: border-box;
 }
+/* responsive */
 
 .grid{
-    height:var(--header-nav-height);
+   
     width:1200px;
     max-width: 100%;
     margin:0 auto;
@@ -33,6 +34,19 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left:-12px;
+    margin-right:-12px;
+}
+.grid__column-2{
+    padding-left:12px;
+    padding-right: 12px;
+    width: 16.6667%;
+  
+}
+.grid__column-10{
+    padding-left:12px;
+    padding-right: 12px;
+    width: 83.3333%;
 }
 @keyframes fadeIn{
     from{
@@ -80,12 +94,12 @@ html{
     border: none;
     font-size: 15px;
     border-radius: 2px;
-    font-weight: 350;
+    font-weight: 400;
     outline: none;
     cursor: pointer;
     padding:0;
     background-color: #fff;
-    color:#333
+ 
 
 }
 .btn.btn__normal:hover{
@@ -97,4 +111,26 @@ html{
 }
 .margin-right{
     margin-right: 8px;
+}
+/* selection */
+.sort-product__select{
+    background-color:var(--white-color);
+    min-width: 200px;
+    height:36px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    color:#333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    font-weight: 400;
+    position: relative;
+}  
+    
+.sort-product__price{
+
+}
+.sort-product__select-icon{
+    color:#888;
 }

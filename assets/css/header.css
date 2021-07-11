@@ -401,6 +401,7 @@ transparent là màu trong suốt */
     display: none;
     border-radius: 2px;
     /* display: none; */
+    z-index: 1;
 }
 /* dấu ~ là thể hiện của thẻ ngay sau thẻ input */
 .header__search-text:focus ~ .header__search-history{

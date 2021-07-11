@@ -1,0 +1,137 @@
+.container{
+    background-color: #f3efef;
+}
+
+.container__content{
+    padding-top: 36px;
+}
+.category{
+    background-color: var(--white-color);
+    border-radius: 2px;
+    
+}
+
+.category-heading{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 0;
+    padding: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.category-heading-icon{
+    margin-right: 8px;
+    font-size: 1.4rem;
+}
+
+
+.category-list{
+    list-style: none;
+    padding-left: 0;
+    padding-left: 8px;
+}
+
+.category-item{
+    padding: 8px 16px;
+    position: relative;
+    transition: right linear 0.1s;
+    right: 0;
+}
+.category-item:hover {
+    right:-4px;
+}
+.category-item--active .category-item__link{
+    color:var(--primary-color);
+}
+.category-item--active .category-item__link::before{
+    content: "";
+    position:absolute;
+    border:4px solid;
+    border-color: transparent transparent transparent var(--primary-color);
+    /* căn giữa theo chiều dọc */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+}
+
+.category-item__link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+/* sort and filter */
+
+.sort-product{
+    display: flex;
+    align-items: center;
+    padding:12px 22px;
+    background-color:#ece7e7;
+    border-radius: 2px;
+}
+
+.sort-product__dis{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-right: 8px;
+}
+
+.sort-product-btn{
+    margin:0 4px;
+    min-width: 90px;
+}
+
+
+
+.sort-product-page{
+    display: flex;
+    align-items: center;
+    /* đẩy sang phải */
+    margin-left: auto;
+    font-size: 1.3rem;
+}
+
+.sort-product-num{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    
+}
+.sort-product__controls{
+    margin-left: 16px;
+}
+
+.sort-product-num__link{
+    padding: 8px 12px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.sort-product-num__link-left{
+    background-color: rgb(248, 248, 248);
+    color:rgb(204, 200, 200);
+}
+
+.sort-product__list{
+    position: absolute;
+    top: 62%;
+    left: 0;
+    background-color: var(--white-color);
+    list-style: none;
+    width: 100%;
+    border-radius: 2px;
+    padding-left: 0;
+    display: none;
+}
+.sort-product__item:hover {
+    background-color: #ccc;
+
+}
+.sort-product__item-link{
+    text-decoration: none;
+    color:var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    padding:12px 0 12px 12px;
+}
+.sort-product__select:hover .sort-product__list{
+    display: block;
+}
