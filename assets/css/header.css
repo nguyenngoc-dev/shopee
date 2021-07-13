@@ -474,6 +474,7 @@ transparent là màu trong suốt */
     transform-origin: 90%  top ;
     animation:scale 0.3s ease,fadeIn 0.3s  ease;
     padding: 0 8px;
+    z-index: 1;
 }
 .header__cart-list::before{
     content: "";
