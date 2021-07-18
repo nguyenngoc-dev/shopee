@@ -122,4 +122,8 @@
     .header-logo {
         width: 120px;
     }
+    .footer-row-margin{
+        margin-left:32px;
+        margin-right: 4px;
+    }
 }
