@@ -119,4 +119,7 @@
         width: unset; 
         display: block;
     }
+    .header-logo {
+        width: 120px;
+    }
 }
