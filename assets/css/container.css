@@ -229,6 +229,7 @@ không thì khi hiện borber nó sẽ chiếm một phần của content */
 .home-product__item-img{
     padding-top: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
   
 
 }
