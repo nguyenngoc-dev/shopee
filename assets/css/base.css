@@ -4,6 +4,7 @@
     --text-color:#333;
     --primary-color:#fe6233;
     --header-height:120px;
+    --header-sort__bar:46px;
     --header-nav-height:39px;
     --header-with-search:calc(var(--header-height) - var(--header-nav-height));
 }
@@ -18,16 +19,9 @@ html{
     box-sizing: border-box;
 }
 /* responsive */
-
-.grid{
-   
-    width:1200px;
-    max-width: 100%;
-    margin:0 auto;
-    /* rộng 1200px khi màn hình lớn hơn 1200px,
-    rộng full khi màn hình nhỏ hơn 1200px */
+.main{
+    overflow: hidden;
 }
-
 .grid--full{
     width: 100%;
 }
@@ -132,9 +126,7 @@ html{
     position: relative;
 }  
     
-.sort-product__price{
 
-}
 .sort-product__select-icon{
     color:#888;
 }
@@ -149,6 +141,7 @@ html{
     list-style: none;
     line-height: 3rem;
     margin: 50px 0;
+    padding-left: 0;
     
 }
 
@@ -180,6 +173,4 @@ html{
     
 }
 
-.pagination__item-icon{
 
-}

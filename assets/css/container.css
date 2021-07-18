@@ -137,11 +137,70 @@
 .sort-product__select:hover .sort-product__list{
     display: block;
 }
+/* mobile category */
+.mobile-category{
+    display: none;
+}
+
+.mobile-category__list{
+    list-style: none;
+    display: flex;
+    /* flex: 1; */
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0;
+    padding-left: 0;
+}
+/* ẩn thanh cuộn */
+.mobile-category__list::-webkit-scrollbar{
+    display: none;
+}
+
+.mobile-category__item{
+    flex-shrink: 0;
+    border-radius: 3px;
+    margin-right:8px;
+
+}
+.mobile-category__item:nth-of-type(2n+1){
+    background-color: #92247a;
+}
+.mobile-category__item:nth-of-type(2n+2){
+    background-color: #3e644b;
+}
+.mobile-category__item:nth-of-type(2n+3){
+    background-color: #081296;
+}
+
+.mobile-category__link{
+    --line-height:2rem;
+    text-decoration: none;
+    color:var(--white-color);
+    display: block;
+    width:110px;
+    height:calc(var(--line-height) * 2);
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: var(--line-height);
+    font-weight: 350;
+    /* khi nội dung dài qua btn 2 dòng thì sẽ hiện dấu ba chấm  */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* người dùng k tạo vùng chọn */
+    user-select: none;
+    -webkit-user-select: none;
+    /* bỏ hight light */
+    -webkit-tap-highlight-color: transparent;
+
+
+    
+}
 
 /* Home product */
 
 .home-product{
-    margin: 16px 8px;
+    margin: 16px 0px;
 }
 .home-product__item-container-link{
     text-decoration: none;
@@ -171,6 +230,7 @@ không thì khi hiện borber nó sẽ chiếm một phần của content */
     padding-top: 100%;
     background-size: cover;
   
+
 }
 
 .home-product__item-container{
@@ -255,9 +315,7 @@ không thì khi hiện borber nó sẽ chiếm một phần của content */
     top: 3px;
 }
 
-.home-product__item-transform-icon{
 
-}
 
 .home-product__item-action{
     display: flex;
@@ -272,9 +330,7 @@ không thì khi hiện borber nó sẽ chiếm một phần của content */
 }
 
 
-.home-product__item-action-rate{
 
-}
 
 .home-product__item-action-star{
     font-size: 0.9rem;
@@ -295,9 +351,7 @@ không thì khi hiện borber nó sẽ chiếm một phần của content */
     margin-top: 6px;
 }
 
-.home-product__item-action-country{
 
-}
 
 .home-product__item-sticky{
     position: absolute;
